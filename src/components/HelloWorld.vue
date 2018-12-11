@@ -6,6 +6,7 @@
         <p class="subheading font-weight-regular">
           Here is the message
           <span name="myMsg">{{msg}}</span>
+          <v-chip>Example Chip</v-chip>
         </p>
       </v-flex>
     </v-layout>
@@ -15,9 +16,9 @@
 <script>
 export default {
   props: ["msg"],
-  data: () => {
-    name: "mike";
-  }
+  data: () => ({
+    name: "mike"
+  })
 };
 </script>
 
